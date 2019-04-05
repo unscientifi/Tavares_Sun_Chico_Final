@@ -1,0 +1,207 @@
+.hidden
+{
+	display: none;
+}
+
+body
+{
+  margin: 20px 0;
+	font-family: 'Gugi', cursive;
+	font-size:25px;
+	/* background-image: url("../images/ep_naturalblack.png"); */
+
+}
+
+a
+{
+	text-decoration: none;
+}
+
+h1
+{
+	font-family: 'Anton', sans-serif;
+	color: #eedd67;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+p
+{
+  color: #202361;
+  font-family: 'Anton', sans-serif;
+}
+
+h1:hover
+{
+	color: #202361;
+}
+
+h2
+{
+  font-family: 'Anton', sans-serif;
+	color: #eedd67;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h3
+{
+	font-family: 'Anton', sans-serif;
+	color: #eedd67;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h3:hover
+{
+	color: #5b5eaa;
+}
+
+*,
+*::before,
+*::after
+{
+  box-sizing: border-box;
+}
+
+.grid
+{
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card
+{
+  position: relative;
+  transition: all .4s linear;
+  transform-style: preserve-3d;
+  margin: 5px;
+}
+
+.card,
+.back,
+.front
+{
+	border-radius: 15px;
+  height: 150px;
+  width: 150px;
+}
+
+.back,
+.front
+{
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front
+{
+  z-index: 2;
+  background: #FFFFF3 url('../images/card_front_face.png') no-repeat center center / contain;
+}
+
+.back
+{
+  transform: rotateY(180deg);
+  background-color: #FFFFF3;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.selected
+{
+  transform: rotateY(180deg);
+}
+
+.match .front
+{
+  background: #FFFFF3 !important;
+}
+
+
+/*Timer*/
+#timerOn
+{
+	display:block;
+	width:100px;
+	margin:0 auto;
+  font-family: 'Anton', sans-serif;
+  color: #eedd67;
+}
+
+.timer
+{
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Anton', sans-serif;
+  color: #eedd67;
+}
+
+/*Congratulations window*/
+.overlay
+{
+	position: fixed;
+	background-color: #ffffff;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.overlay:target
+{
+	visibility: visible;
+	opacity: 1;
+}
+
+#window
+{
+	margin: 70px auto;
+	padding: 20px;
+	background: #ffffff;
+	border-radius: 5px;
+	width: 85%;
+	position: relative;
+	transition: all 5s ease-in-out;
+}
+
+#window h2
+{
+	margin-top: 0;
+	color: #333;
+  font-family: 'Anton', sans-serif;
+	color: #eedd67;
+}
+
+#window .close
+{
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+}
+
+#window .close:hover
+{
+	color: #E5F720;
+}
+
+.show
+{
+	visibility: visible !important;
+	opacity: 100 !important;
+}
+
+#totalTime
+{
+  font-family: 'Anton', sans-serif;
+  color: #202361;
+}

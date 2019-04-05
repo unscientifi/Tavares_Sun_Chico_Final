@@ -1,0 +1,154 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Your Book</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+  </head>
+  <body>
+   
+
+
+    <h1 class="hide">Chico's Adventure Purchase Page</h1>
+
+  <header id="mainHeader" class="row">
+
+<!--       <div id="mainImg" data-interchange="[images/bannerSquare-01.png, small],[images/promoImg2.jpg, medium], [images/chicoBanner-01.png, large]"> -->
+
+
+    <div class="grid-x">
+      <div class="cell large-12">
+        <h2 class="hide">Main Nav</h2>
+          <div class="title-bar" data-responsive-toggle="mainMenu" data-hide-for="large" data-hide-for="medium">
+            <div class="title-bar-right">
+                  <button class="menu-icon" type="button" data-toggle="mainMenu"></button>
+            </div>  
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-x">
+    <div id="mainMenu" class="cell large-12">
+      <ul id="mainNav">
+          <li><a href="index.html" class="underline">Home</a></li>
+          <li><a href="play.html" class="underline">Play</a></li>
+          <li><a href="news.html" class="underline">News</a></li>
+          <li><a href="buy.html" class="underline">Buy</a></li>
+          <li><a href="contact.html" class="underline">Contact</a></li>
+          <li><a href="#" data-open="exampleModal1" class="donatePage">Donate</a>
+              <div class="reveal" id="exampleModal1" data-reveal>
+                  <h3>You Can Make A Difference!</h3>
+                  <div>
+                    <p>Select a Donation Amount</p>
+                    <ul class="button-group radius even-4" id="donationList">
+                      <li><a href="#" class="button">$15</a></li>
+                      <li><a href="#" class="button">$20</a></li>
+                      <li><a href="#" class="button">$50</a></li>
+                      <li><a href="#" class="button">$100</a></li>
+                      <li><input type="text" placeholder="other" /></li>
+                    </ul>
+                    <ul id="donationLink">
+                     <li><a href="#"><img src="images/visa.png"></a> 
+                      <li><a href="#"><img src="images/paypal.png"></a> 
+                    </ul>
+                 </div>
+                  <button class="close-button" data-close aria-label="Close modal" type="button">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+            </div>
+    </div>
+    </div>
+    
+    <img data-interchange="[images/mobileBannerChico.png, small], [images/tabletBannerChico.png, medium], [images/bannerDesktop-01.png, large]">
+
+  </header>
+
+
+  <div class="grid-container">
+     <div class="grid-x grid-margin-x" id="orderBook">
+      <div class="cell text-center">
+        <h2>Order Your Book</h2>
+      </div>
+
+      <div class="cell small-12 text-center medium-5">
+        <img src="images/book.jpeg" alt="book">
+      </div>
+      <div class="cell small-12 medium-7" id="bookInfo">
+        <p>One to twenty books is $12.99 each.
+        <br>
+        Twenty or more books? Please contact us and we'll work out a great deal for you! Grab your copies</p>
+        <button id="buyButton" class="text-center" type="button" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TNZAAJPZHRX82">Add to Cart</button>
+      </div>
+     </div> 
+
+       <div class="grid-x" id="support">
+        <div class="cell small-12 large-5">
+          <img src="images/dentist.png" alt="kid and dentist">
+        </div>
+        <div class="cell small-12 large-6" id="supportText">
+          <h3>Your Support Matters</h3>
+          <p>Your gift helps get more cutting-edge scientists, conservationists, and educators out into the field - to save wildlife, protect wild places, and further understanding of our planet.</p>
+          <button id="donateBtn" herf="#" data-reveal-id="popUp" data-open="exampleModal1"><span class="fa fa-heart"></span>Donate</button>
+              <div class="reveal" id="exampleModal1" data-reveal>
+                  <h3>You Can Make A Difference!</h3>
+                  <div>
+                    <p>Select a Donation Amount</p>
+                    <ul class="button-group radius even-4" id="donationList">
+                      <li><a href="#" class="button">$15</a></li>
+                      <li><a href="#" class="button">$20</a></li>
+                      <li><a href="#" class="button">$50</a></li>
+                      <li><a href="#" class="button">$100</a></li>
+                      <li><input type="text" placeholder="other" /></li>
+                    </ul>
+                    <ul id="donationLink">
+                     <li><a href="#"><img src="images/visa.png"></a> 
+                      <li><a href="#"><img src="images/paypal.png"></a> 
+                    </ul>
+                 </div>
+                  <button class="close-button" data-close aria-label="Close modal" type="button">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+            </div>
+
+
+
+        </div>
+      </div> 
+
+
+
+</div>
+
+ <a href="#" class="float" id="menu-share">
+        <i class="fas fa-paw" id="floatPaw"></i>
+      </a>
+        <ul id="floatMenu">
+          <li><a href="#">
+          <i class="fab fa-twitter my-float"></i>
+          </a></li>
+          <li><a href="#">
+          <i class="fab fa-instagram my-float"></i>
+          </a></li>
+          <li><a href="https://www.facebook.com/ChicoHelpsSickKids/">
+          <i class="fab fa-facebook-f my-float"></i>
+          </a></li>
+        </ul>
+
+     <footer class="grid-x">
+      <div class="cell">
+        <img src="images/footer.jpeg">
+      </div> 
+     </footer> 
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
